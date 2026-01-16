@@ -3,7 +3,7 @@ import java.util.List;
 
 class Arista {
     Nodo destino;
-    int tiempo; 
+    int tiempo; // Tiempo, peso , ponderación, cuanfeo es el nodo siguiente, ... 
 
     public Arista(Nodo destino, int tiempo) {
         this.destino = destino;

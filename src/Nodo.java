@@ -2,7 +2,7 @@ import java.util.*;
 
 
 class Nodo {
-    int id;
+    int id;// Identificador
     List<Arista> conexiones; //Cada nodo viene con sus pesos
     Nodo padre;
 
