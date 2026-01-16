@@ -18,6 +18,8 @@ public class App {
             n[3].conectarCon(n[6], 1);
             n[4].conectarCon(n[5], 1);
             n[4].conectarCon(n[6], 1);
+            n[5].conectarCon(n[4], 1);//-----Añadimos este nodo
+            
 
             //resolvemos con algoritmo CSP - con backtracking
             // Satisfacción de restricciones con vuelta atrás
@@ -50,14 +52,14 @@ public class App {
         //Empezmos con las restricciones
         
         //Restricción de número de saltos
-        if(rutaInicial.size()>4) //mayor que 4 
+        if(rutaInicial.size()>5) //mayor que 4 
             return false;
 
         //¿hemos llegado a la meta?
         if(actual.id==meta.id){
             //hemos llegado al final 
             //Comprobamos que son 3 saltos, no 4
-            if(rutaInicial.size()==4){
+            if(rutaInicial.size()==5){
                 System.out.println("Hemos encontrado solución, alma de pollo!!!");
                 imprimirRuta(rutaInicial, tiempoInicial);
                 return true; //Devolvemos éxito!
